@@ -1,0 +1,38 @@
+{
+    "createPetRequest": {
+        "id": 18628361283,
+        "category": {
+          "id": 1,
+          "name": "Pet1"
+        },
+        "name": "doggie",
+        "photoUrls": [
+          "bla-bla"
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "1"
+          }
+        ],
+        "status": "available"
+    },
+    "updatePetRequest": {
+        "id": 71628736123,
+        "category": {
+          "id": 1,
+          "name": "pet2"
+        },
+        "name": "doggie-2",
+        "photoUrls": [
+          "bla-bla-2"
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "string"
+          }
+        ],
+        "status": "available"
+    }
+}

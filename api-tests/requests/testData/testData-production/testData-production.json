@@ -1,0 +1,46 @@
+[
+    {
+        "scenarioName": "PetStore - Find Pet By PetId",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8",
+            "api_key": "special-key"
+        },
+        "queryParams": {
+
+        },
+        "testData": {
+            "petId": "123"
+        }
+    },
+    {
+        "scenarioName": "PetStore - Update Pet Name",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8",
+            "api_key": "special-key"
+        },
+        "queryParams": {
+
+        },
+        "testData": {
+            "petId": "123",
+            "updatedDogName": "Doggie-2",
+            "categoryName": "Pet2"
+        }
+    },
+    {
+        "scenarioName": "PetStore - Delete Pet By PetId",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json;charset=utf-8",
+            "api_key": "special-key"
+        },
+        "queryParams": {
+
+        },
+        "testData": {
+            "petId": "123"
+        }
+    }
+]

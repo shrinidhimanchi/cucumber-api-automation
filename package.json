@@ -1,0 +1,51 @@
+{
+    "name": "ubank-test",
+    "version": "1.0.0",
+    "keywords": [
+        "testing",
+        "bdd",
+        "cucumber",
+        "gherkin",
+        "tests",
+        "apiautomation"
+    ],
+    "description": "api test automation using cucumberjs & axios",
+    "homepage": "https://github.com/shrinidhimanchi",
+    "scripts": {
+        "startUpScript": "node api-tests/prerequisites/startUpScript.js",
+        "executeShellScript": "chmod 755 api-tests/cli/runAcceptanceTest.sh",
+        "cucumber-petStoreTest": "cucumber-js  --profile default --tags @petStoreTest api-tests/features/*.feature; npm run cucumber-report",
+        "cucumber-report": "node api-tests/cucumber-report/report.js",
+        "cucumber-inBuiltReport": "cat api-tests/output/usage.ndjson | cucumber-html-formatter ndjson > api-tests/output/report1.html"
+    },
+    "author": {
+        "name": "Shrinidhi Manchi <shrinidhimanchi@gmail.com>"
+    },
+    "contributors": [
+        "shrinidhimanchi <shrinidhimanchi@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shrinidhimanchi/ubank-test"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=10",
+        "vscode": "^1.52.1"
+    },
+    "devDependencies": {
+        "chai": "4.3.4",
+        "chai-as-promised": "7.1.1",
+        "cli-color": "2.0.0",
+        "mocha": "^10.0.0"
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "8.1.1",
+        "axios": "0.27.2",
+        "config": "3.3.7",
+        "cucumber-html-reporter": "^5.5.0",
+        "http-status-codes": "^2.2.0",
+        "multiple-cucumber-html-reporter": "1.20.0",
+        "uuid": "^8.3.2"
+    }
+}
