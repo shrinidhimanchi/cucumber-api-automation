@@ -1,4 +1,4 @@
-# UBANK API TEST
+# CUCUMBER API AUTOMATION
 
 ## This Project helps us in performing the automation testing of REST APIs using CucumberJs & axios
 
